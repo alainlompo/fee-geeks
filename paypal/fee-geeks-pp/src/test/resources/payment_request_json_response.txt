@@ -1,0 +1,37 @@
+{
+  "id": "PAY-9UD38174TM939172BK4A6YYY",
+  "intent": "sale",
+  "payer": {
+    "payment_method": "paypal"
+  },
+  "transactions": [
+    {
+      "transactions": [],
+      "related_resources": [],
+      "amount": {
+        "currency": "USD",
+        "total": "12.00"
+      },
+      "description": "creating a payment"
+    }
+  ],
+  "state": "created",
+  "create_time": "2016-04-04T04:24:02Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-9UD38174TM939172BK4A6YYY",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd\u003d_express-checkout\u0026token\u003dEC-10P56674LF403570S",
+      "rel": "approval_url",
+      "method": "REDIRECT"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-9UD38174TM939172BK4A6YYY/execute",
+      "rel": "execute",
+      "method": "POST"
+    }
+  ]
+}
